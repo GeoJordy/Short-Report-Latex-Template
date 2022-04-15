@@ -1,0 +1,56 @@
+% This latex template was taken from 
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\include{Configurations/Color}
+\include{Configurations/HyperRefStyle}
+\include{Configurations/Coding}
+\usepackage{graphicx}
+\graphicspath{ {./images/} }
+% \include{Configurations/ShortCite} %short cite style, comment if numeric cite is wanted
+\usepackage[style=custom-numeric-comp]{biblatex} %uncomment if numeric cite is wanted
+\addbibresource{references.bib}
+\usepackage{graphicx}
+\usepackage{blindtext}
+\usepackage[a4paper, total={6in, 8in}]{geometry}
+
+\title{
+\centerline{\includegraphics[width=100mm]{Cover/Geosyntec-Logo-COLOR-no-tagline.png}}
+\vspace{0.5cm}
+A Latex Template for Short Reports: \\
+\vspace{0.1cm}
+\large Subtitle
+\vspace{0.5cm}}
+
+\author{Authors: \\ \small Arthur Dent and \\ \small Marvin the Paranoid Android \\ \\ Principal Investigator: \\ \small Ford Prefect \\ \vspace{1in}}
+
+\date{\today}
+% end of preambles
+
+\begin{document}
+
+\maketitle
+
+\newpage
+
+\tableofcontents
+
+\section{Introduction}
+Write your introduction here!
+
+
+\section{Methods}
+Add yo methods here!
+\subsection{Citation Demo}
+The Answer to the Great Question... Of Life, the Universe and Everything... Is... Forty-two \ftCite{adams1995hitchhiker}
+
+\section{Discussion}
+
+\newpage
+\section{Figures}
+
+
+\includegraphics[scale=0.2]{images/lucky_number_42.jpg}
+
+\newpage
+\printbibliography
+\end{document}
